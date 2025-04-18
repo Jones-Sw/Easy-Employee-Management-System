@@ -8,6 +8,7 @@ namespace EEMS.DataAccess
     public class EEMSDbContext : DbContext
     {
         public DbSet<Employee> Employees { get; set; }
+        public DbSet<Condidate> condidates { get; set; }
         public DbSet<Department> Departments { get; set; }
         public DbSet<Absence> Absences { get; set; }
         public DbSet<AbsenceType> AbsenceTypes { get; set; }

@@ -1,0 +1,77 @@
+﻿<Window x:Class="EEMS.UI.Views.Vacations.Vacations"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:UC="clr-namespace:EEMS.UI.UserControls"
+        xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EEMS.UI.Views.Vacations"
+        mc:Ignorable="d"
+        Title="Vacations" Height="450" Width="800">
+
+    <Border
+        
+        CornerRadius="10"
+        MouseDown="Border_MouseDown">
+
+        <Grid>
+
+            <Grid.RowDefinitions>
+               
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <UC:TextBoxUserControl
+         Grid.Column="0"
+         Caption="Contract Number"
+         Hint="Enter your contract Number"
+         Text="{Binding FirstName, Mode=TwoWay}" />
+            <UC:TextBoxUserControl
+         Grid.Row="1"
+         Grid.Column="2"
+         Caption="First Name"
+         Hint="Enter your first Name"
+         Text="{Binding Email, Mode=TwoWay}" />
+            <UC:TextBoxUserControl
+          Grid.Row="1"
+          Grid.Column="0"
+          Caption="Family Name"
+          Hint="Enter your family name"
+          Text="{Binding Email, Mode=TwoWay}" />
+            <UC:TextBoxUserControl
+         Grid.Row="2"
+         Grid.Column="0"
+         Caption="Position"
+         Hint="Enter your position"
+         Text="{Binding Email, Mode=TwoWay}" />
+            <UC:TextBoxUserControl
+         Grid.Row="2"
+         Grid.Column="2"
+         Caption="Salary"
+         Hint="Enter your salary"
+         Text="{Binding Email, Mode=TwoWay}" />
+            <UC:DatePickerUserControl
+         Grid.Row="3"
+         Grid.Column="0"
+         HorizontalAlignment="Left"
+         Caption="Start Date"
+         SelectedDate="{Binding SelectedDate, Mode=TwoWay}" />
+            <UC:DatePickerUserControl
+         Grid.Row="3"
+         Grid.Column="1"
+         HorizontalAlignment="Left"
+         Caption="End Date"
+         SelectedDate="{Binding SelectedDate, Mode=TwoWay}" />
+
+        </Grid>
+
+    </Border>
+</Window>

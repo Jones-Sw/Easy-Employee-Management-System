@@ -50,5 +50,8 @@ public partial class AddAndEditWindow : Window
         this.WindowState = WindowState.Minimized;
     }
 
+    private void CardUserControl_Loaded(object sender, RoutedEventArgs e)
+    {
 
+    }
 }

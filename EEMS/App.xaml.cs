@@ -3,6 +3,7 @@ using EEMS.BusinessLogic.Services;
 using EEMS.DataAccess;
 using EEMS.UI.UserControls;
 using EEMS.UI.ViewModels;
+using EEMS.UI.Views.Condidates;
 using EEMS.UI.Views.Employees;
 using EEMS.UI.Views.Shared;
 using Microsoft.EntityFrameworkCore;
@@ -41,20 +42,21 @@ public partial class App : Application
 
         // Register services
         service.AddTransient<IEmployeeService, EmployeeService>();
+        service.AddTransient<ICondidatesService, CondidateService>();
         service.AddTransient<IDepartmentService, DepartmentService>();
         service.AddTransient<IJobNatureService, JobNatureService>();
         service.AddTransient<IEmployeeManagementService, EmployeeManagementService>();
-
+        service.AddTransient<ICondidateManagementService, CondidateManagementService>();
         // Register ViewModels
         service.AddTransient<EmployeeViewModel>();
         service.AddTransient<PersonalInformationViewModel>();
         service.AddTransient<JobInformationViewModel>();
         service.AddTransient<AddAndEditWindowViewModel>();
-        
+        service.AddTransient<CondidatesViewModel>();
 
         // Register pages
         service.AddTransient<EmployeePage>();
-
+        service.AddTransient<CondidatesPage>();
 
         //Resigter User Control
         service.AddTransient<PersonalInformationUserControl>();

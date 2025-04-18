@@ -21,7 +21,7 @@
         CornerRadius="10"
         MouseDown="Border_MouseDown">
 
-        <Grid Margin="5">
+        <Grid  Margin="5">
             <Grid.RowDefinitions>
                 <RowDefinition Height="45" />
                 <RowDefinition Height="Auto" />
@@ -29,6 +29,7 @@
             </Grid.RowDefinitions>
 
             <!--  top  -->
+            
             <TextBlock
                 Margin="50,0,0,2"
                 HorizontalAlignment="Left"
@@ -68,6 +69,7 @@
             </StackPanel>
 
             <!--  Header  -->
+
             <TextBlock
                 Grid.Row="1"
                 Margin="0,0,0,20"
@@ -75,10 +77,10 @@
                 FontSize="24"
                 FontWeight="Bold"
                 Text="Employee Details" />
-
+           
             <!--  Main content  -->
             <ScrollViewer Grid.Row="2" VerticalScrollBarVisibility="Auto">
-                <StackPanel Margin="10" Orientation="Vertical">
+                <StackPanel Background="LightGray" Margin="10" Orientation="Vertical">
                     <Grid Margin="0,0,0,10">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*" />

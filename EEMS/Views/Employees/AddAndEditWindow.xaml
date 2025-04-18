@@ -122,7 +122,7 @@
                         Title="Personel Information"
                         IsActive="{Binding IsPersonalInfoActive}"
                         Number="1"
-                        Time="3 min" />
+                        Time="3 min" Loaded="CardUserControl_Loaded" />
                     <UC:CardUserControl
                         Title="Job Information"
                         IsActive="{Binding IsJobInfoActive}"

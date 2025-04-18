@@ -13,6 +13,9 @@ namespace EEMS.UI.Views.Employees
             DataContext = employeeViewModel;
         }
 
-        
+        private void VioletButtonFill_Loaded(object sender, System.Windows.RoutedEventArgs e)
+        {
+
+        }
     }
 }

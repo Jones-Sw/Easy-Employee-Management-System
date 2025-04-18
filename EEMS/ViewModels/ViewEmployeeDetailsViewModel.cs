@@ -78,9 +78,7 @@ public partial class ViewEmployeeDetailsViewModel : ObservableObject
         IsActive = employee.IsActive;
     }
 
-    
-
-
-
-
+    public ViewEmployeeDetailsViewModel(Condidate selectedCondidate)
+    {
+    }
 }
